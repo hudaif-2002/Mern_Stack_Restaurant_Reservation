@@ -64,7 +64,7 @@ if (!firstName || firstName.length < 3 || firstName.length > 30) {
     // Handle Mongoose validation errors
     if (error.name === 'ValidationError') {
       const validationErrors = Object.values(error.errors).map(err => err.message);
-      return next(new ErrorHandler(validationErrors.join(', '), 400));
+      return next(new ErrorHandler(validationErrors.join(','), 400));
     }
 
     // Handle other errors

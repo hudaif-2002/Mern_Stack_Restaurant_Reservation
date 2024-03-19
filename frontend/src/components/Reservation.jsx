@@ -15,7 +15,7 @@ const Reservation = () => {
   const navigate = useNavigate();
 
   const handleReservation = async (e) => {
-    toast.success("hi");
+    // toast.success("hi");
     e.preventDefault();
     try {
       const { data } = await axios.post(
