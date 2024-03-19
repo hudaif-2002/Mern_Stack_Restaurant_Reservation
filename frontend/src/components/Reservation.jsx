@@ -20,7 +20,7 @@ const Reservation = () => {
     try {
       const { data } = await axios.post(
         // "https://mern-stack-restaurant-reservation.vercel.app/api/v1/reservation/send",
-        "https://mern-stack-restaurant-reservation-e4izknaop.vercel.app/api/v1/reservation/send",
+        "https://mern-stack-restaurant-reservation.vercel.app/api/v1/reservation/send",
         
         // "http://localhost:4000/api/v1/reservation/send",
         { firstName, lastName, email, phone, date, time },
