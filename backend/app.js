@@ -16,6 +16,13 @@ app.use(cors({
 //app.use is a middleware
 app.use(express.json());//converts json format string to json obj
 app.use(express.urlencoded({extended:true})); //data is of which type
+app.get("/",(req,res)=>{
+    res.json({
+        succcess:true,
+        message:"HABIBI COME TO DUBAI",
+    });
+});
+
 
 dbConnection();
 app.use(errorMiddleware);
