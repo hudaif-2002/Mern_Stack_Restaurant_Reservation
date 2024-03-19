@@ -36,7 +36,7 @@ const Reservation = () => {
       setEmail("");
       setTime("");
       setDate("");
-      navigate("/success");
+      navigate("/Success");
     } catch (error) {if (error.response && error.response.status === 400) {
       // Validation error
       toast.error(error.response.data.message); // Display the validation error message
